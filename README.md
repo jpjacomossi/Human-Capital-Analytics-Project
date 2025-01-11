@@ -14,7 +14,6 @@
 5. [Recommendations](#recommendations)
 6. [Tools and Technologies](#tools-and-technologies)
 
-
 ## Background and Overview
 In today’s competitive business environment, an organization’s success relies heavily on its human capital. Talent retention is critical to maintaining a competitive edge, fostering innovation, and achieving long-term business goals. High employee turnover not only disrupts productivity but also incurs significant costs in hiring, onboarding, and training replacements. 
 
