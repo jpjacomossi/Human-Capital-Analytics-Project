@@ -5,14 +5,22 @@
 2. [Data Structure Overview](#data-structure-overview)
 3. [Executive Summary](#executive-summary)
 4. [Insights Deep Dive](#insights-deep-dive)
-    - [Turnover Drivers](#1-turnover-drivers)
-    - [Turnover Profiles and Cluster Performance](#2-turnover-profiles-and-cluster-performance)
-    - [Impact Score Methodology](#3-impact-score-methodology)
-    - [Turnover Risk Categorization](#4-turnover-risk-categorization)
-    - [Predictive Modeling Insights](#5-predictive-modeling-insights)
-    - [Insights on Retention](#6-insights-on-retention)
+   - [Key Turnover Patterns](#key-turnover-patterns)
+   - [Turnover Profiles and Cluster Performance](#turnover-profiles-and-cluster-performance)
+   - [Impact Score Methodology](#impact-score-methodology)
+   - [Turnover Risk Categorization](#turnover-risk-categorization)
+   - [Predictive Modeling Insights](#predictive-modeling-insights)
+   - [Retention Insights](#retention-insights)
 5. [Recommendations](#recommendations)
+   - [Enhance Employee Satisfaction](#enhance-employee-satisfaction)
+   - [Support Employee Performance](#support-employee-performance)
+   - [Balance Workloads](#balance-workloads)
+   - [Increase Promotion Opportunities](#increase-promotion-opportunities)
+   - [Improve Salary Structures](#improve-salary-structures)
+   - [Proactively Engage with At-Risk Employees](#proactively-engage-with-at-risk-employees)
+   - [Address Systemic Issues](#address-systemic-issues)
 6. [Tools and Technologies](#tools-and-technologies)
+
 
 
 
@@ -59,7 +67,7 @@ This project addresses high employee turnover at an engineering company by ident
 
 ### Key Findings
 
-#### 1. Turnover Drivers
+#### 1. Factors Influencing Turnover
 - Dissatisfaction, low salaries, limited career advancement opportunities, and imbalanced workloads are significant contributors to turnover.
 - Turnover rates are particularly high during mid-tenure periods (years 4–6).
 
