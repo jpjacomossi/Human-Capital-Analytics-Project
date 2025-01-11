@@ -5,7 +5,7 @@
 2. [Data Structure Overview](#data-structure-overview)
 3. [Executive Summary](#executive-summary)
 4. [Insights Deep Dive](#insights-deep-dive)
-   - [Key Turnover Patterns](#key-turnover-patterns)
+   - [Turnover Drivers](#turnover-drivers)
    - [Turnover Profiles and Cluster Performance](#turnover-profiles-and-cluster-performance)
    - [Impact Score Methodology](#impact-score-methodology)
    - [Turnover Risk Categorization](#turnover-risk-categorization)
@@ -13,6 +13,7 @@
    - [Retention Insights](#retention-insights)
 5. [Recommendations](#recommendations)
 6. [Tools and Technologies](#tools-and-technologies)
+
 
 ## Background and Overview
 In today’s competitive business environment, an organization’s success relies heavily on its human capital. Talent retention is critical to maintaining a competitive edge, fostering innovation, and achieving long-term business goals. High employee turnover not only disrupts productivity but also incurs significant costs in hiring, onboarding, and training replacements. 
