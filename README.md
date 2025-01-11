@@ -5,14 +5,15 @@
 2. [Data Structure Overview](#data-structure-overview)
 3. [Executive Summary](#executive-summary)
 4. [Insights Deep Dive](#insights-deep-dive)
-    - [Turnover Drivers](#turnover-drivers)
-    - [Employee Profiles and Cluster Performance](#employee-profiles-and-cluster-performance)
-    - [Impact Score Methodology](#impact-score-methodology)
-    - [Turnover Risk Categorization](#turnover-risk-categorization)
-    - [Predictive Modeling Insights](#predictive-modeling-insights)
-    - [Insights on Retention](#insights-on-retention)
+    - [Turnover Drivers](#1-turnover-drivers)
+    - [Employee Profiles and Cluster Performance](#2-employee-profiles-and-cluster-performance)
+    - [Impact Score Methodology](#3-impact-score-methodology)
+    - [Turnover Risk Categorization](#4-turnover-risk-categorization)
+    - [Predictive Modeling Insights](#5-predictive-modeling-insights)
+    - [Insights on Retention](#6-insights-on-retention)
 5. [Recommendations](#recommendations)
 6. [Tools and Technologies](#tools-and-technologies)
+
 
 
 
