@@ -6,7 +6,7 @@
 3. [Executive Summary](#executive-summary)
 4. [Insights Deep Dive](#insights-deep-dive)
     - [Turnover Drivers](#1-turnover-drivers)
-    - [Employee Profiles and Cluster Performance](#2-employee-profiles-and-cluster-performance)
+    - [Turnover Profiles and Cluster Performance](#2-turnover-profiles-and-cluster-performance)
     - [Impact Score Methodology](#3-impact-score-methodology)
     - [Turnover Risk Categorization](#4-turnover-risk-categorization)
     - [Predictive Modeling Insights](#5-predictive-modeling-insights)
@@ -63,7 +63,7 @@ This project addresses high employee turnover at an engineering company by ident
 - Dissatisfaction, low salaries, limited career advancement opportunities, and imbalanced workloads are significant contributors to turnover.
 - Turnover rates are particularly high during mid-tenure periods (years 4–6).
 
-#### 2. Employee Profiles Identified Through Clustering
+#### 2. Profiles of Employees Who Left (Clustering Analysis)
 - **Disengaged Employees**: Low performers with minimal projects and short tenures, often leaving due to insufficient support or engagement.
 - **Overworked Achievers**: High performers with heavy workloads, leaving due to burnout and unrecognized contributions.
 - **Stagnated Employees**: Long-tenured, highly satisfied, and strong performers who left due to a lack of growth and promotion opportunities.
@@ -110,7 +110,7 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
 
 ---
 
-### 2. Employee Profiles and Cluster Performance
+### 2. Turnover Profiles and Cluster Performance
 
 #### **Cluster Metrics**
 - **Overall Silhouette Width**: 0.73 (indicating strong clustering quality).
