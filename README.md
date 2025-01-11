@@ -1,18 +1,19 @@
 # Human Capital Analytics: Addressing Employee Turnover
 
-## Table of Contents
+ ## Table of Contents
 1. [Background and Overview](#background-and-overview)
 2. [Data Structure Overview](#data-structure-overview)
 3. [Executive Summary](#executive-summary)
 4. [Insights Deep Dive](#insights-deep-dive)
-   - [Turnover Drivers](#turnover-drivers)
-   - [Turnover Profiles and Cluster Performance](#turnover-profiles-and-cluster-performance)
-   - [Impact Score Methodology](#impact-score-methodology)
-   - [Turnover Risk Categorization](#turnover-risk-categorization)
-   - [Predictive Modeling Insights](#predictive-modeling-insights)
-   - [Retention Insights](#retention-insights)
+   1. [Turnover Drivers](#1-turnover-drivers)
+   2. [Turnover Profiles and Cluster Performance](#2-turnover-profiles-and-cluster-performance)
+   3. [Impact Score Methodology](#3-impact-score-methodology)
+   4. [Turnover Risk Categorization](#4-turnover-risk-categorization)
+   5. [Predictive Modeling Insights](#5-predictive-modeling-insights)
+   6. [Retention Insights](#6-retention-insights)
 5. [Recommendations](#recommendations)
 6. [Tools and Technologies](#tools-and-technologies)
+
 
 
 ## Background and Overview
@@ -203,7 +204,7 @@ The Impact Score is calculated as:
   - **Low Risk**: 11,183 employees.
 
 ---
-### 6. Insights on Retention
+### 6. Retention Insights
 
 Retention is influenced by factors such as salary, promotion rates, workload, and performance metrics. By analyzing employees with no risk of leaving (as predicted by the model with a **probability of leaving = 0**) compared to those who left, several key insights emerged:
 
