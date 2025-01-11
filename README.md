@@ -86,8 +86,8 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
 
 ### 1. Turnover Drivers
 - **Salary Impact**:
-  - 6.63% of high-salary employees leave, compared to 29.7% of low-salary employees and 20.4% of medium-salary employees.
-  - Among employees who left, 60.8% were in the low-salary group, while only 2.3% were in the high-salary group. This overrepresentation highlights low salary as a key driver of turnover (Figure 6.10).
+  - 6.63% of high-salary employees leave, compared to 29.7% of low-salary employees and 20.4% of medium-salary employees.   
+  - Among employees who left, 60.8% were in the low-salary group, while only 2.3% were in the high-salary group. This overrepresentation highlights low salary as a key driver of turnover.
 
 - **Performance Evaluation**:
   - Turnover rates vary significantly across performance evaluation scores (last evaluation):
