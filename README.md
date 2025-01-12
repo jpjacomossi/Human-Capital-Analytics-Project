@@ -15,7 +15,6 @@
 6. [Tools and Technologies](#tools-and-technologies)
 
 
-
 ## Background and Overview
 In today’s competitive business environment, an organization’s success relies heavily on its human capital. Talent retention is critical to maintaining a competitive edge, fostering innovation, and achieving long-term business goals. High employee turnover not only disrupts productivity but also incurs significant costs in hiring, onboarding, and training replacements. 
 
@@ -86,66 +85,146 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
 
 ### 1. Turnover Drivers
 - **Salary Impact**:
-  - 6.63% of high-salary employees leave, compared to 29.7% of low-salary employees and 20.4% of medium-salary employees.   
-  - Among employees who left, 60.8% were in the low-salary group, while only 2.3% were in the high-salary group. This overrepresentation highlights low salary as a key driver of turnover.
+  - 6.63% of high-salary employees leave, compared to 29.7% of low-salary employees and 20.4% of medium-salary employees.  
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/b856fe04-2c37-4ebc-832f-1f338bde14d5" alt="Turnover Rate by Salary Category" width="400" />
+    </div>
+
+  - Among employees who left, 60.8% were in the low-salary group, while only 2.3% were in the high-salary group.  
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/32eba86a-1a1f-48d7-aa96-9c347e3b7536" alt="Salary Distribution by Employee Status" width="550" />
+    </div>
 
 - **Performance Evaluation**:
   - Turnover rates vary significantly across performance evaluation scores (last evaluation):
     - **Low Performers**: Employees with evaluation scores between 0.4 and 0.5 exhibit the highest turnover rate (43.1%).
     - **Medium Performers**: Employees with scores between 0.6 and 0.7 have the lowest turnover rate (2.46%).
     - **High Performers**: Employees with scores between 0.9 and 1 show an elevated turnover rate (32.7%), above the overall average of 23.8%.
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/ea6decd4-eddd-4377-9b54-343265eb2189" alt="Performance Evaluation Turnover Trends" width="550" />
+    </div>
+
   - These trends suggest:
     - Low performers leave due to underperformance and potential lack of fit.
     - High performers may leave due to seeking better opportunities in terms of salary and professional growth, despite their strong contributions to the organization.
 
 - **Tenure and Promotions**:
-  - Turnover peaks at year 5, coinciding with the lowest promotion rates (1.15% at year 5 and 1.37% at year 4). In contrast, employees with a tenure of 7+ years, who experience the highest promotion rates, show zero turnover (Figure 6.25).
-  - Employees not promoted in the last five years have a turnover rate approximately 4 times higher (24.2%) than those who were promoted (5.96%) (Figure 6.13).
+  - Turnover peaks at year 5, coinciding with the lowest promotion rates (1.15% at year 5 and 1.37% at year 4). In contrast, employees with a tenure of 7+ years, who experience the highest promotion rates, show zero turnover.
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/43d5da35-58a3-47d3-9165-d4842ea725cd" alt="Turnover and Promotions Chart" width="500" />
+    </div>
+
+  - Employees not promoted in the last five years have a turnover rate approximately 4 times higher (24.2%) than those who were promoted (5.96%).
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/99d517d2-aa58-4d41-984c-6ca49e022a91" alt="Turnover Rate Comparison" width="400" />
+    </div>
+    
+  - Turnover rates among employees with less than 5 years of tenure are over 20% for those not promoted, compared to less than 10% for those promoted.
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/b8eb37a3-1a93-40aa-b7dd-40e86d3a1a35" alt="Turnover Rates - Less than 5 Years" width="400" />
+    </div>
+
+  - For employees with 5+ years of tenure:
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/bdf4f085-56c1-4331-a006-1e63a6d14e1d" alt="Turnover Rates - 5+ Years" width="400" />
+    </div>
+    
+    - Turnover almost doubles when employees haven’t been promoted.
+    - Turnover decreases by approximately 50% when employees have been promoted.
+
+    These findings highlight the importance of timely promotions in retaining employees.
 
 - **Workload and Satisfaction**:
-  - Turnover rates exceed 30% for employees with low (90–145 hours) or very high workloads (255–310 hours) (Figure 6.20).
-  - Employees in the optimal workload range (162–216 hours) show the lowest turnover rate of 2.11% (Figure 6.21).
-  - Turnover reaches 100% among the most dissatisfied employees, underscoring the critical role of satisfaction in retention. In contrast, turnover rates for generally satisfied employees’ range between 12.5% and 25%, indicating significantly better retention in this group 
+  - Turnover rates exceed 30% for employees with low (90–145 hours) or very high workloads (255–310 hours).
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/49bc41e5-b333-49e9-bcba-ed1c8eef2cc5" alt="Workload Turnover Rates" width="500" />
+    </div>
+
+  - Employees in the optimal workload range (162–216 hours) show the lowest turnover rate of 2.11%.
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/e1dd359b-9499-4351-aa33-0d2412a996b5" alt="Optimal Workload Turnover Rate" width="500" />
+    </div>
+
+  - Turnover reaches 100% among the most dissatisfied employees, underscoring the critical role of satisfaction in retention. In contrast, turnover rates for generally satisfied employees range between 12.5% and 25%, indicating significantly better retention in this group.
+
+    <div align="center">
+        <img src="https://github.com/user-attachments/assets/b978cc45-4d0f-4790-a694-6d8f95ef1148" alt="Turnover by Satisfaction Level" width="500" />
+    </div>
 
 ---
-
 ### 2. Turnover Profiles and Cluster Performance
 
+#### **Optimal Number of Clusters**
+- The **Elbow Method** was used to determine the optimal value of k by evaluating the point where adding more clusters no longer significantly reduces within-cluster variance.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5229f5a2-c9f5-4db1-af63-abc6866c4dd8" alt="Elbow Method Plot" width="500" />
+</div>
+
+- The Elbow Method plot shows a significant drop in within-cluster variance up to **k=3**, after which the improvement becomes minimal.  
+- Based on this analysis, **k=3** was chosen as the optimal number of clusters.
+
 #### **Cluster Metrics**
+
 - **Overall Silhouette Width**: 0.73 (indicating strong clustering quality).
-  - **Cluster 1 (Disengaged Employees)**:
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e74dde92-d63d-4c00-a66a-1a035be0b52b" alt="Cluster Metrics Table" width="500" />
+</div>
+
+  - **Cluster 1**:
     - Silhouette Width: 0.82
     - Employees: 1,649
     - Represents the most cohesive and distinct cluster.
-  - **Cluster 2 (Overworked Achievers)**:
+  - **Cluster 2**:
     - Silhouette Width: 0.67
     - Employees: 963
     - Strong clustering quality but with slightly less separation from neighboring clusters.
-  - **Cluster 3 (Stagnated Employees)**:
+  - **Cluster 3**:
     - Silhouette Width: 0.64
     - Employees: 959
     - Lower but still acceptable clustering quality.
 
 #### **Profile Descriptions**
-1. **Disengaged Employees** (Cluster 1):
-   - Minimal involvement (low projects, fewer hours) and low performance.
-   - Likely to leave early in tenure due to lack of support and motivation.
 
-2. **Overworked Achievers** (Cluster 2):
-   - High performance, heavy workloads, but low satisfaction.
-   - Left due to burnout and lack of recognition.
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/a21e7d74-c374-41a4-a8a3-89eef9a16b33" alt="Cluster Descriptions" width="600" />
+</div>
 
-3. **Stagnated Employees** (Cluster 3):
-   - Long-tenured, satisfied, and strong performers but left due to limited career growth opportunities and low salaries.
+1. **Disengaged Employees** (Cluster 1):  
+   - Minimal involvement (low projects, fewer hours) and low performance.  
+   - Likely to leave early in tenure due to lack of support and motivation.  
+
+2. **Overworked Achievers** (Cluster 2):  
+   - High performance, heavy workloads, but low satisfaction.  
+   - Left due to burnout and lack of recognition.  
+
+3. **Stagnated Employees** (Cluster 3):  
+   - Long-tenured, satisfied, and strong performers but left due to limited career growth opportunities and low salaries.  
 
 #### **Key Observations Across Clusters**
 - **Salary Distribution**:
-  - Over 60% of employees in all clusters fall into the low-salary category (Table 10.5).
-- **Promotion Rates**:
-  - Promotions are rare across all clusters, with less than 1% receiving promotions in the last five years (Table 10.6).
-- These trends suggest systemic issues affecting all clusters, amplifying specific pain points within each group.
+  - Over 60% of employees in all clusters fall into the low-salary category.
 
----
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/44d6b07b-efdb-457c-b601-ff7685bfa769" alt="Salary Distribution Chart" width="700" />
+</div>
+
+- **Promotion Rates**:
+  - Promotions are rare across all clusters, with less than 1% receiving promotions in the last five years.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/6721a253-b316-4f13-86f5-86dc97baf2d4" alt="Promotion Rates Chart" width="500" />
+</div>
+
+These trends suggest systemic issues affecting all clusters, amplifying specific pain points within each group.
+
 
 ### 3. Impact Score Methodology
 The **Impact Score** is a composite metric designed to prioritize employees who contribute the most to the organizational goals. It incorporates three key criteria:
