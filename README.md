@@ -442,7 +442,5 @@ The primary objective of this section is to provide actionable recommendations t
 - **Modeling and Machine Learning**: `randomForest`, `caret`, `rpart`, `rpart.plot`, `e1071`, `neuralnet`
 - **Evaluation and Metrics**: `pROC`, `class`
 
-### Development Tools
-- **RStudio**: Integrated Development Environment for R programming.
-- **GitHub**: For version control and collaboration.
+
 
