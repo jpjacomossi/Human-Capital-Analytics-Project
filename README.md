@@ -5,12 +5,13 @@
 2. [Data Structure Overview](#data-structure-overview)
 3. [Executive Summary](#executive-summary)
 4. [Insights Deep Dive](#insights-deep-dive)
-   1. [Turnover Drivers](#1-turnover-drivers)
-   2. [Turnover Profiles and Cluster Performance](#2-turnover-profiles-and-cluster-performance)
-   3. [Impact Score Methodology](#3-impact-score-methodology)
-   4. [Turnover Risk Categorization](#4-turnover-risk-categorization)
-   5. [Predictive Modeling Insights](#5-predictive-modeling-insights)
-   6. [Retention Insights](#6-retention-insights)
+   - [Turnover Drivers](#1-turnover-drivers)
+   - [Turnover Profiles and Cluster Performance](#2-turnover-profiles-and-cluster-performance)
+   - [Impact Score Methodology](#3-impact-score-methodology)
+   - [Turnover Risk Categorization](#4-turnover-risk-categorization)
+   - [Predictive Modeling Insights](#5-predictive-modeling-insights)
+   - [Top 10 Priority Employees by Risk Category](#6-top-10-priority-employees-by-risk-category)
+   - [Retention Insights](#7-retention-insights)
 5. [Recommendations](#recommendations)
 6. [Tools and Technologies](#tools-and-technologies)
 
@@ -30,7 +31,7 @@ By understanding the root causes of employee turnover and proactively identifyin
 
 ## Data Structure Overview
 
-The dataset consists of 11,428 employee records and includes the following key variables:
+The dataset consists of 14,999 employee records and includes the following key variables:
 
 ### Original Variables:
 - **satisfaction_level**: Employee satisfaction score (0–1.00).
@@ -64,7 +65,7 @@ This project addresses high employee turnover at an engineering company by ident
 #### 2. Profiles of Employees Who Left (Clustering Analysis)
 - **Disengaged Employees**: Low performers with minimal projects and short tenures, often leaving due to insufficient support or engagement.
 - **Overworked Achievers**: High performers with heavy workloads, leaving due to burnout and unrecognized contributions.
-- **Stagnated Employees**: Long-tenured, highly satisfied, and strong performers who left due to a lack of growth and promotion opportunities.
+- **Stagnated Employees**: Long-tenured and strong performers who, despite having high satisfaction scores, left due to a lack of growth and promotion opportunities.
 
 #### 3. Predictive Modeling Results
 - The Random Forest model achieved the following results:
@@ -84,13 +85,14 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
 ## Insights Deep Dive
 
 ### 1. Turnover Drivers
+
 - **Salary Impact**:
-  - 6.63% of high-salary employees leave, compared to 29.7% of low-salary employees and 20.4% of medium-salary employees.  
+  - Turnover rates are highest among low-salary employees (29.7%), followed by medium-salary (20.4%) and high-salary employees (6.63%). This demonstrates a clear relationship between lower salaries and higher turnover.
     <div align="center">
         <img src="https://github.com/user-attachments/assets/b856fe04-2c37-4ebc-832f-1f338bde14d5" alt="Turnover Rate by Salary Category" width="400" />
     </div>
 
-  - Among employees who left, 60.8% were in the low-salary group, while only 2.3% were in the high-salary group.  
+  - Most employees fall into the low-salary group (48.8%), followed by medium-salary (42.9%) and high-salary (8.2%). Among employees who left, 60.8% were in the low-salary group, while only 2.3% were in the high-salary group, further highlighting the link between low salaries and turnover. Employees who stayed showed a more balanced distribution, with higher representation in the medium- and high-salary groups.
     <div align="center">
         <img src="https://github.com/user-attachments/assets/32eba86a-1a1f-48d7-aa96-9c347e3b7536" alt="Salary Distribution by Employee Status" width="550" />
     </div>
@@ -116,27 +118,34 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
         <img src="https://github.com/user-attachments/assets/43d5da35-58a3-47d3-9165-d4842ea725cd" alt="Turnover and Promotions Chart" width="500" />
     </div>
 
-  - Employees not promoted in the last five years have a turnover rate approximately 4 times higher (24.2%) than those who were promoted (5.96%).
-
-    <div align="center">
-        <img src="https://github.com/user-attachments/assets/99d517d2-aa58-4d41-984c-6ca49e022a91" alt="Turnover Rate Comparison" width="400" />
-    </div>
-    
-  - Turnover rates among employees with less than 5 years of tenure are over 20% for those not promoted, compared to less than 10% for those promoted.
+  - **Employees with Less than 5 Years of Tenure**:
+    - **Promotions**:
+      - 1.82% of employees with less than 5 years of tenure were promoted.
+    - **Turnover Rates**:
+      - Not Promoted: 20.9%
+      - Promoted: 8.07%
+    - Insight: Employees who were not promoted had a turnover rate over 2.5 times higher than those who were promoted, highlighting the importance of promotion in reducing early-career turnover.
 
     <div align="center">
         <img src="https://github.com/user-attachments/assets/b8eb37a3-1a93-40aa-b7dd-40e86d3a1a35" alt="Turnover Rates - Less than 5 Years" width="400" />
     </div>
 
-  - For employees with 5+ years of tenure:
+  - **Employees with 5+ Years of Tenure**:
+    - **Promotions**:
+      - 3.48% of employees with 5+ years of tenure were promoted.
+    - **Turnover Rates**:
+      - Not Promoted: 39.2%
+      - Promoted: 1.04%
+    - Insights:
+      - Turnover rates for employees who were not promoted doubled when comparing those with less than 5 years of tenure (20.9%) to those with 5+ years of tenure (39.2%), demonstrating the accumulating negative impact of lack of recognition over time.
+      - For employees who were promoted, turnover rates decreased significantly, dropping from 8.07% (less than 5 years tenure) to 1.04% (5+ years tenure). This highlights the role of timely promotions in fostering long-term employee retention.
+
     <div align="center">
         <img src="https://github.com/user-attachments/assets/bdf4f085-56c1-4331-a006-1e63a6d14e1d" alt="Turnover Rates - 5+ Years" width="400" />
     </div>
-    
-    - Turnover almost doubles when employees haven’t been promoted.
-    - Turnover decreases by approximately 50% when employees have been promoted.
 
     These findings highlight the importance of timely promotions in retaining employees.
+
 
 - **Workload and Satisfaction**:
   - Turnover rates exceed 30% for employees with low (90–145 hours) or very high workloads (255–310 hours).
@@ -156,6 +165,35 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
     <div align="center">
         <img src="https://github.com/user-attachments/assets/b978cc45-4d0f-4790-a694-6d8f95ef1148" alt="Turnover by Satisfaction Level" width="500" />
     </div>
+
+#### **Combined Metrics Analysis: Tenure, Satisfaction, Workload, and Performance Evaluation**
+- The visualization below highlights critical trends in average satisfaction, workload, number of projects, and performance evaluation over tenure for employees who stayed versus those who left:
+
+  <div align="center">
+      <img width="650" alt="Combined Metrics Analysis" src="https://github.com/user-attachments/assets/2241144d-e5ff-42ff-96ad-953d2c40be0d" />
+  </div>
+
+- **Key Insights**:
+  - **Year 2**:
+    - Employees who left early in their tenure (around 2 years) display lower satisfaction levels than their peers who stayed, even though their workloads and evaluations are comparable or slightly higher. 
+    - Interpretation: This indicates a possible misalignment of expectations or lack of engagement early in their tenure, leading to early exits.
+
+  - **Year 3**:
+    - Turnover at year 3 is characterized by even lower satisfaction levels, the worst evaluation scores, and minimal workloads.
+    - Employees leaving at this stage may feel disconnected or undervalued, as they have lower workload responsibilities and poor evaluations. Intervention in recognition and support at this stage could reduce exits.
+
+  - **Year 4**:
+    - Turnover at year 4 shows the lowest satisfaction levels, high evaluation scores, and peak workloads among those leaving.
+    - Year 4 marks a period of intense workload pressure and high performance expectations without adequate satisfaction, leading to burnout or disengagement. These employees may leave due to feeling overburdened and underappreciated.
+
+  - **Years 5–6**:
+    - Employees leaving at years 5–6 exhibit improved satisfaction levels, the highest evaluations, and high workloads (though slightly lower than year 4 leavers).
+    - At this stage, employees are likely high performers who feel a lack of career progression or recognition. Despite their achievements, the absence of timely rewards such as promotions or raises likely drives them to seek opportunities elsewhere.
+
+- **General Insight**:
+  - The 4–6 year tenure period is critical for intervention as it represents a convergence of high workloads, strong performance, and a need for career advancement.
+  - Providing timely rewards, recognition, and opportunities for growth during this window could significantly improve retention.
+  - Early interventions (year 2) should focus on onboarding support and expectation alignment to prevent early turnover. Similarly, proactive engagement and workload management at year 4 could mitigate burnout and dissatisfaction.
 
 ---
 ### 2. Turnover Profiles and Cluster Performance
@@ -223,7 +261,7 @@ These findings equip HR with a proactive, data-driven framework to improve emplo
     <img src="https://github.com/user-attachments/assets/6721a253-b316-4f13-86f5-86dc97baf2d4" alt="Promotion Rates Chart" width="500" />
 </div>
 
-These trends suggest systemic issues affecting all clusters, amplifying specific pain points within each group.
+These trends suggest low salaries and lack of promotions are systemic issues affecting all clusters, amplifying specific pain points within each group.
 
 
 ### 3. Impact Score Methodology
@@ -272,18 +310,64 @@ The Impact Score is calculated as:
 
 ### 5. Predictive Modeling Insights
 - The dataset was partitioned into training (70%), validation (20%), and testing (10%) sets to ensure robust model evaluation.
-- The Random Forest model was selected due to its superior performance:
+- The **Random Forest model** was selected due to its superior performance during validation:
+
+  <div align="center">
+    <img src="https://github.com/user-attachments/assets/33e7ac18-966a-4f17-9b31-39be0a9e17a8" alt="Random Forest Performance Metrics" width="600" />
+  </div>
+
+- On the **test set**, the Random Forest model demonstrated excellent performance, achieving: 
   - **Accuracy**: 99.07% - Correctly classified employees who stayed or left.
   - **Sensitivity**: 96.47% - Effectively identified employees at risk of leaving.
   - **Precision**: 99.39% - Ensured predicted at-risk employees were truly at risk.
 - The model categorized employees into four risk groups:
-  - **High Risk**: 8 employees.
-  - **Moderate Risk**: 19 employees.
-  - **Low-Moderate Risk**: 218 employees.
-  - **Low Risk**: 11,183 employees.
+
+  <div align="center">
+      <img src="https://github.com/user-attachments/assets/1fda24e6-58cb-4e84-befa-783e74bd9e07" alt="Risk Categorization Chart" width="400" />
+  </div>
+
+  - **High Risk**: 8 employees - Immediate intervention is needed for these employees, as they are most likely to leave and may have a significant impact on the organization.
+  - **Moderate Risk**: 19 employees - These employees show potential turnover risks and should be closely monitored to identify and address any emerging issues.
+  - **Low-Moderate Risk**: 218 employee - While these employees are less likely to leave, they should still receive regular check-ins to prevent escalation.
+  - **Low Risk**: 11,183 employees - Not displayed in the chart due to their overwhelming size. These employees are least likely to leave and represent a stable core of the workforce.
+ 
+---
+    
+### 6. Top 10 Priority Employees by Risk Category
+
+To prioritize retention efforts effectively, the **impact score** was used to identify the top 10 employees in each risk category prioritized by impact score and then by probability of leaving. These employees represent critical cases where turnover could significantly impact the organization.
+
+#### **Low Risk Category**
+These employees are less likely to leave but have a high impact score, highlighting their importance to the organization.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/a5f7c16c-03ac-47bf-9a34-e47b6d08c269" alt="Top 10 Priority Employees - Low Risk" width="800" />
+</div>
+
+#### **Low-Moderate Risk Category**
+This group includes employees with a slightly elevated risk of turnover. Their high impact scores make them essential for retention efforts.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e18bd115-710b-43a0-a43a-804f38d2ee0a" alt="Top 10 Priority Employees - Low-Moderate Risk" width="800" />
+</div>
+
+#### **Moderate Risk Category**
+Employees in this category exhibit moderate turnover risk. They should be prioritized for interventions due to their significant contributions.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/91f8bebb-f22e-4344-8837-90536b6cf25c" alt="Top 10 Priority Employees - Moderate Risk" width="800" />
+</div>
+
+#### **High Risk Category**
+This group represents employees most likely to leave the organization. Proactive measures are critical to retaining these high-impact individuals.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/c617dcc4-0eb2-44c3-9144-cc85e557f486" alt="Top 10 Priority Employees - High Risk" width="800" />
+</div>
 
 ---
-### 6. Retention Insights
+
+### 7. Retention Insights
 
 Retention is influenced by factors such as salary, promotion rates, workload, and performance metrics. By analyzing employees with no risk of leaving (as predicted by the model with a **probability of leaving = 0**) compared to those who left, several key insights emerged:
 
