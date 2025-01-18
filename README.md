@@ -436,7 +436,7 @@ The primary objective of this section is to provide actionable recommendations t
 - **R**: Used for data preprocessing, analysis, modeling, and visualization.
 
 ### Libraries and Packages
-- **Data Preprocessing**: `dplyr`, `fastDummies`
+- **Data Preprocessing**: `dplyr`, `fastDummies`,`tidyr`
 - **Visualization**: `ggplot2`, `plotly`, `gplots`, `gridExtra`
 - **Clustering and Feature Selection**: `cluster`, `factoextra`, `Boruta`
 - **Modeling and Machine Learning**: `randomForest`, `caret`, `rpart`, `rpart.plot`, `e1071`, `neuralnet`
