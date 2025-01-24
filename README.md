@@ -439,8 +439,8 @@ The primary objective of this section is to provide actionable recommendations t
 - **Data Preprocessing**: `dplyr`, `fastDummies`,`tidyr`
 - **Visualization**: `ggplot2`, `plotly`, `gplots`, `gridExtra`
 - **Clustering and Feature Selection**: `cluster`, `factoextra`, `Boruta`
-- **Modeling and Machine Learning**: `randomForest`, `caret`, `rpart`, `rpart.plot`, `e1071`, `neuralnet`
-- **Evaluation and Metrics**: `pROC`, `class`
+- **Modeling and Evaluation**: `randomForest`, `caret`, `rpart`, `rpart.plot`, `e1071`, `neuralnet`, `pROC`, `class`
+---
 
 
 
